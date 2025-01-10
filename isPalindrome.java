@@ -1,6 +1,11 @@
 public class isPalindrome {
 
-    public static void isPalindromeNum(int num){
+    public static boolean isPalindromeNum(int num){
+        
+        if (num < 0) {
+            return false;
+        }
+        
         int originalNum = num;
         int reverseNum = 0;
 
@@ -11,15 +16,21 @@ public class isPalindrome {
         }
 
         if(originalNum != reverseNum){
-            System.out.println(false);
+            return false;
         } else{
-            System.out.println(true);
+            return true;
         }
 
         
     }
     public static void main(String[] args){
-        int num = 12222221;
-        isPalindromeNum(num);
+        int num = -112222221;
+        boolean is = isPalindromeNum(num);
+
+        if(is){
+            System.out.println("True");
+        } else{
+            System.out.println("false");
+        }
     }
 }
