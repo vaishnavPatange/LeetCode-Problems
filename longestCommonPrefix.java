@@ -27,6 +27,6 @@ public class longestCommonPrefix {
 
         String result = findLongestCommonPrefix(words);
 
-        System.out.println("Longest Common Prefix: " + result);
+        System.out.println("Longest Common Prefix = " + result);
     }
 }
